@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Eco-friendly Brand Greeny">
+	  <meta name="keywords" content="eco-friendly bag, nakshi kantha, soft toy,top products,best products,mission green bangladesh,eco-friendly products,greeny's carpets,greeny's three pieces">
+  	<meta name="author" content="Md. Mahmudul Hasan Mabud">
+    <title>greeny | home</title>
+    <link rel="icon" href="greeny-icon.jpg">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <!-- Search Bar -->
+    <header>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search products">
+            <button onclick="searchProduct()">Search</button>
+            <img src="cart-icon.png" alt="Cart" class="cart-logo" width="30" onclick="openCart()">
+        </div>
+    </header>
+
+    <!-- Product List -->
+    <div class="container" id="productContainer">
+        <!-- 8 Products -->
+        <div class="item" data-name="Soft Toy">
+            <img src="toy.jpg" alt="Soft Toy">
+            <div class="item-info">
+                <h3>Soft Toy</h3>
+                <p>Snuggle up with our sweet soft toys – the perfect cuddle buddy for your heart!</p>
+                <p class="price">৳500</p>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Soft Toy', 500)">Add to Cart</button>
+        </div>
+        <div class="item" data-name="Shawls">
+            <img src="dress.jpg" alt="Shawls">
+            <div class="item-info">
+                <h3>Shawls</h3>
+                <p>Stay warm and stylish with our cozy shawls!</p>
+                <p class="price">৳800</p>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Shawls', 800)">Add to Cart</button>
+        </div>
+        <!-- Duplicate Items for Testing -->
+        <div class="item" data-name="Eco-friendly Bag">
+            <img src="bag.jpg" alt="Bag">
+            <div class="item-info">
+                <h3>Eco-friendly Bag</h3>
+                <p>Eco-friendly bags – a small step towards a greener planet.</p>
+                <p class="price">৳50</p>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Eco-friendly Bag', 50)">Add to Cart</button>
+        </div>
+        <div class="item" data-name="Three piece">
+            <img src="three-piece.jpg" alt="Three piece">
+            <div class="item-info">
+                <h3>Three piece</h3>
+                <p>Grace your style with our stunning three-piece collection – perfect for any occasion!</p>
+                <p class="price">৳1,350</p>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Three piece', 1350)">Add to Cart</button>
+        </div>
+        <!-- More Items -->
+        <div class="item" data-name="Nakshi Kantha">
+            <img src="nakshi-kantha.jpg" alt="Nakshi kantha">
+            <div class="item-info">
+                <h3>Nakshi kantha</h3>
+                <p>Experience the artistry of Nakshi Kantha – where tradition meets craftsmanship.</p>
+                <p class="price">৳7,500</p>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Nakshi kantha', 7500)">Add to Cart</button>
+        </div>
+        <div class="item" data-name="Carpets">
+            <img src="carpet.jpg" alt="Carpets">
+            <div class="item-info">
+                <h3>Carpets</h3>
+                <p>Enhance your space with our elegant, comfortable carpets.</p>
+                <p class="price">৳100 per sqft</p>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Carpets', 100)">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <h2>Your Cart</h2>
+        <ul id="cartItems"></ul>
+        <button class="close-cart" onclick="closeCart()">Close Cart</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <a href="home.html"class="logo">greeny.</a>
+    </footer>
+
+    <script src="home.js"></script>
+</body>
+</html>
